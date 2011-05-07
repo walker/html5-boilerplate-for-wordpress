@@ -30,7 +30,7 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
   <!-- CSS : implied media="all" -->
-  <?php versioned_stylesheet(get_bloginfo( 'stylesheet_url' )); ?>
+  <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
 
   <!-- (Almost) All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/js/libs/modernizr-1.7.min.js">
