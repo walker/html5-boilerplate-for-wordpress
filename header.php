@@ -30,13 +30,10 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
   <!-- CSS : implied media="all" -->
-  <?php versioned_stylesheet(get_bloginfo('template_url')."/style.css") ?>
-
-  <!-- Uncomment if you are specifically targeting less enabled mobile browsers
-  <?php versioned_stylesheet(get_bloginfo('template_url')."/handheld.css", 'media="handheld"') ?> -->
+  <?php versioned_stylesheet(php bloginfo( 'stylesheet_url' )); ?>
 
   <!-- (Almost) All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
-  <?php versioned_javascript(get_bloginfo('template_url')."/js/libs/modernizr-1.7.min.js") ?>
+  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/js/libs/modernizr-1.7.min.js">
 
   <!-- Grab Google CDN's jQuery. fall back to local if necessary, we're doing it here, rather than footer, so that plugins have it available when they almost all bind to wp_head() -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
