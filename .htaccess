@@ -1,6 +1,4 @@
-# BEGIN WordPress
-
-# END WordPress
+# Wordpress items should go at the bottom
 
 # Apache configuration file
 # httpd.apache.org/docs/2.2/mod/quickreference.html
@@ -285,6 +283,7 @@ FileETag None
 # Turning on the rewrite engine is necessary for the following rules and features.
 
 <IfModule mod_rewrite.c>
+  Options +FollowSymlinks
   RewriteEngine On
 </IfModule>
 
@@ -481,3 +480,7 @@ Options -Indexes
 php_value session.cookie_httponly true
 </IfModule>
 
+
+# BEGIN WordPress
+
+# END WordPress
