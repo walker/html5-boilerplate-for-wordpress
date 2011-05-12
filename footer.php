@@ -17,8 +17,8 @@
 </div> <!--! end of #container -->
 
   <!-- Javascript that is non-plugin related at the bottom for fast page loading -->
-  <?php versioned_javascript(get_bloginfo('template_url')."/js/plugins.js") ?>
-  <?php versioned_javascript(get_bloginfo('template_url')."/js/script.js") ?>
+  <script src="<?php bloginfo('template_url') ?>/js/plugins.js"></script>
+  <script src="<?php bloginfo('template_url') ?>/js/script.js"></script>
 
 
   <?php wp_footer(); ?>
