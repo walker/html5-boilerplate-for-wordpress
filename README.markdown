@@ -13,12 +13,10 @@ and [section](http://html5doctor.com/the-section-element/).
 
 It's a very bare layout, including only the base styles that come with the boilerplate and required WordPress styles, so layout is up to you. Alternatively, you could apply the methods used here to other themes.
 
-To Get Repo & Submodules
+To Get Repo
 --------------
 1. `git clone git@github.com:walker/html5-boilerplate-for-wordpress.git`
 2. `cd html4-boilerplate-for-wordpress`
-3. `git submodule init`
-4. `git submodule update`
 
 Getting Started
 ---------------
@@ -27,19 +25,12 @@ Getting Started
 3. Add some of the "Root Files" to the root directory of your website (explained below).
 4. Style away, knowing that you're building on a super solid base with HTML5 awesomeness.
 
-To Build Your Theme for Production
----------------
-1. `cd [path to themes dir]/html5-boilerplate-for-wordpress/build`
-2. `ant build` (or `ant minify`)
-3. Change the folder created called "publish" to the name of your theme. Upload that folder to your server. That folder becomes your main theme directory on your production server.
-
-
 Root Files
 ----------
 These files can be found in the theme. Some of the files listed here should be (carefully) moved to the root of your site (same level as the wp-content directory). Read on for specific instructions.
 
 ### 404 Page
-If you use permanlinks (WP-Admin > Settings > Permalinks), then WordPress handles any 404s with the 404.php included in the theme.
+If you use permalinks (WP-Admin > Settings > Permalinks), then WordPress handles any 404s with the 404.php included in the theme.
 
 ### .htaccess
 **Do not copy to the root of your site.** This may overwrite the WordPress htaccess, and break Wordpress. Instead, copy and paste the contents of this file to the .htaccess already at the root of your site, after the existing content. It would be good to make a comment where the Boilerplate content begins, like "# Begin HTML5 Boilerplate". Read htaccess file for more info on what it does.
