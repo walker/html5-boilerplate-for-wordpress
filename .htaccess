@@ -35,9 +35,6 @@
 </IfModule>
 
 <IfModule mod_headers.c>
-# FileETag None is not enough for every server.
-  Header unset ETag
-
 # Because X-UA-Compatible isn't sent to non-IE (to save header bytes),
 # We need to inform proxies that content changes based on UA
   Header append Vary User-Agent
@@ -81,10 +78,11 @@
 
 # audio
 AddType audio/ogg                      oga ogg
+AddType audio/mp4                      m4a
 
 # video
 AddType video/ogg                      ogv
-AddType video/mp4                      mp4
+AddType video/mp4                      mp4 m4v
 AddType video/webm                     webm
 
 # Proper svg serving. Required for svg webfonts on iPad
@@ -236,19 +234,22 @@ AddType text/x-vcard                   vcf
   
 </IfModule>
 
+
+
 # ----------------------------------------------------------------------
 # ETag removal
 # ----------------------------------------------------------------------
+
+# FileETag None is not enough for every server.
+<IfModule mod_headers.c>
+  Header unset ETag
+</IfModule>
 
 # Since we're sending far-future expires, we don't need ETags for
 # static content.
 #   developer.yahoo.com/performance/rules.html#etags
 FileETag None
 
-# FileETag None is not enough for every server.
-<IfModule mod_headers.c>
-  Header unset ETag
-</IfModule>
 
 
 # ----------------------------------------------------------------------
