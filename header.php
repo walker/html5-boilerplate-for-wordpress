@@ -33,12 +33,12 @@
   <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
 
   <!-- (Almost) All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
-  <script src="<?php bloginfo('template_url'); ?>/js/libs/modernizr-1.7.min.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/js/libs/modernizr-2.0-1.7.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/libs/respond.min.js"></script>
 
   <!-- Grab Google CDN's jQuery. fall back to local if necessary, we're doing it here, rather than footer, so that plugins have it available when they almost all bind to wp_head() -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write("<script src='<?php bloginfo('template_url'); ?>/js/libs/jquery-1.6.1.min.js'>\x3C/script>")</script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write("<script src='<?php bloginfo('template_url'); ?>/js/libs/jquery-1.6.2.min.js'>\x3C/script>")</script>
 
   <!-- Wordpress Head Items -->
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
