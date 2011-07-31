@@ -199,11 +199,7 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 
 
 /* Assistive text */
-.skip-link {
-	display:none;
-}
 .assistive-text {
-	display: none;
 	position: absolute !important;
 	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
 	clip: rect(1px, 1px, 1px, 1px);
