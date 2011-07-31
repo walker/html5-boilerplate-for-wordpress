@@ -6,14 +6,14 @@
 
 get_header(); ?>
 
-  <div id="main" role="main">
+<div id="main" role="main">
 
-    <details>
-      <summary><h1>Not found</h1></summary>
-      <p><span frown>:(</span></p>
-    </details>
+	<details>
+		<summary><h1>Not found</h1></summary>
+		<p><span frown>:(</span></p>
+	</details>
 
-  </div>
+</div>
 
 <?php get_sidebar(); ?>
 
