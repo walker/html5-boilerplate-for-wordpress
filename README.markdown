@@ -16,7 +16,7 @@ It's a very bare layout, including only the base styles that come with the boile
 To Get Repo
 --------------
 1. `git clone git@github.com:walker/html5-boilerplate-for-wordpress.git`
-2. `cd html4-boilerplate-for-wordpress`
+2. `cd html5-boilerplate-for-wordpress`
 
 Getting Started
 ---------------
