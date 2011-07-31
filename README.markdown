@@ -1,7 +1,7 @@
 HTML5 Boilerplate for Wordpress
 ===============================
 
-This theme is built on the [HTML5 Boilerplate](http://html5boilerplate.com/) by Paul Irish and Divya Manian. The sole purpose of this theme is to save developers the time it takes to apply the HTML5 Boilerplate to WordPress. The "HTML5 Boilerplate" name is used with permission from Paul Irish. (This is from the original file by zencoder. [Walker](http://github.com/walker) forked his and assumes this is still alright to use.)
+This theme is built on [HTML5 Boilerplate](http://html5boilerplate.com/) by Paul Irish and Divya Manian. The sole purpose of this theme is to save developers the time it takes to apply the HTML5 Boilerplate to WordPress. The "HTML5 Boilerplate" name is used with permission from Paul Irish. (This is from the original file by zencoder. [Walker](http://github.com/walker) forked his and assumes this is still alright to use.)
 
 The layout is based on Bruce Lawson's [Designing a Blog with HTML5](http://html5doctor.com/designing-a-blog-with-html5/)
 
