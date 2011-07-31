@@ -33,7 +33,7 @@
   <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
 
   <!-- (Almost) All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
-  <script src="<?php bloginfo('template_url'); ?>/js/libs/modernizr-2.0.min.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/js/libs/modernizr-2.0.6.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/libs/respond.min.js"></script>
 
   <!-- Grab Google CDN's jQuery. fall back to local if necessary, we're doing it here, rather than footer, so that plugins have it available when they almost all bind to wp_head() -->
