@@ -10,6 +10,8 @@ if(function_exists( 'register_nav_menu')) {
 	register_nav_menu('footer', 'Footer Navigation');
 }
 
+add_theme_support( 'post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'audio', 'chat', 'video'));
+
 // Custom HTML5 Comment Markup
 function mytheme_comment($comment, $args, $depth) {
 	$GLOBALS['comment'] = $comment; ?>
