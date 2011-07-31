@@ -4,6 +4,12 @@
  * @subpackage HTML5_Boilerplate
  */
 
+if(function_exists( 'register_nav_menu')) {
+	add_theme_support('menus');
+	register_nav_menu('primary', 'Primary Navigation');
+	register_nav_menu('footer', 'Footer Navigation');
+}
+
 // Custom HTML5 Comment Markup
 function mytheme_comment($comment, $args, $depth) {
 	$GLOBALS['comment'] = $comment; ?>

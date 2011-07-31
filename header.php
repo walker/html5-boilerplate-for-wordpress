@@ -50,3 +50,21 @@
 				<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
 				<p class="description"><?php bloginfo('description'); ?></p>
 			</header>
+			<div id="access" role="navigation">
+				<?php /*
+				Allow screen readers / text browsers to skip the navigation menu and
+				get right to the good stuff. */ ?>
+				<div class="skip-link screen-reader-text">
+					<a href="#main" title="<?php esc_attr_e( 'Skip to content', 'html5-boilerplate-for-wordpress' ); ?>"><?php _e( 'Skip to content', 'html5-boilerplate-for-wordpress' ); ?></a>
+				</div>
+				
+				<?php /*
+				
+				Our navigation menu.  If one isn't filled out, wp_nav_menu falls
+				back to wp_page_menu.  The menu assigned to the primary position is
+				the one used.  If none is assigned, the menu with the lowest ID is
+				used. */
+				
+				wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
+				
+			</div><!-- #access -->

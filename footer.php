@@ -5,6 +5,7 @@
  */
 ?>
 			<footer>
+				<?php wp_nav_menu( array( 'container_class' => 'menu-footer', 'theme_location' => 'primary', 'fallback_cb' => false) ); ?>
 				<p>
 					<?php bloginfo('name'); ?> is proudly powered by
 					<a href="http://wordpress.org/">WordPress</a>, and built using the <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a>.
