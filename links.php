@@ -11,7 +11,7 @@ Template Name: Links
 
 <?php get_header(); ?>
 
-<div id="main">
+<div id="content">
 
 	<h2>Links:</h2>
 	

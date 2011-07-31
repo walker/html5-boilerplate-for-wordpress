@@ -414,7 +414,7 @@ extend(QUnit, {
 	 */
 	reset: function() {
 		if ( window.jQuery ) {
-			jQuery("#main, #qunit-fixture").html( config.fixture );
+			jQuery("#content, #qunit-fixture").html( config.fixture );
 		}
 	},
 	

@@ -4,7 +4,7 @@
  * @subpackage HTML5_Boilerplate
  */
 ?>
-<aside id="sidebar">
+<aside id="secondary">
 	<?php   /* Widgetized sidebar, if you have the plugin installed. */
 		if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : ?>
 			

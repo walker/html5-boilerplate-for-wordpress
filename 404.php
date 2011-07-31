@@ -6,7 +6,7 @@
 
 get_header(); ?>
 
-<div id="main" role="main">
+<div id="content" role="main">
 
 	<details>
 		<summary><h1>Not found</h1></summary>

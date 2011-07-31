@@ -10,7 +10,7 @@ Template Name: Archives
 
 <?php get_header(); ?>
 
-<div id="main">
+<div id="content">
 
 	<?php get_search_form(); ?>
 
