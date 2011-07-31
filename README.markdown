@@ -43,6 +43,9 @@ www.adobe.com/devnet/flashplayer/articles/cross_domain_policy.html
 ### robots.txt
 Tells all search engines that they can read and index all pages. This is handled by WordPress so you shouldn't need to move this to the root.
 
+### humans.txt
+Feel free to edit this and move to root.
+
 Root Images
 -----------
 These are some images you might put in your site root.
