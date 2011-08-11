@@ -20,6 +20,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
  * 
  * ==|== normalize ==========================================================
  */
+
+
 /* =============================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -28,7 +30,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 audio:not([controls]) { display: none; }
 [hidden] { display: none; }
-
 
 /* =============================================================================
    Base
@@ -216,6 +217,17 @@ input:invalid, textarea:invalid { background-color: #f0dddd; }
 table { border-collapse: collapse; border-spacing: 0; }
 td { vertical-align: top; }
 
+/* =============================================================================
+   Wordress-required Styles
+   ========================================================================== */
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.alignleft { float: left; }
+.alignright { float: right; }
+.wp-caption { border: 1px solid #ddd; text-align: center; background-color: #f3f3f3; padding-top: 4px; margin: 10px; -moz-border-radius: 3px; -khtml-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+.wp-caption img { margin: 0; padding: 0; border: 0 none; }
+.wp-caption-dd { font-size: 11px; line-height: 17px; padding: 0 4px 5px; margin: 0; }
+.sticky { background: #f7f7f7; padding: 0 10px 10px; }
+.sticky h2 { padding-top: 10px; }
 
 /* ==|== primary styles =====================================================
    Author: 
@@ -244,10 +256,10 @@ td { vertical-align: top; }
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
 .ir br { display: none; }
 
-/* Hide for both screenreaders and browsers: h5bp.com/m */
-.hidden { display: none; visibility: hidden; }
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden { display: none !important; visibility: hidden; }
 
-/* Hide only visually, but have it available for screenreaders: h5bp.com/n  & h5bp.com/o */
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
 .visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
 
 /* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
