@@ -4,6 +4,7 @@
 * @subpackage HTML5_Boilerplate
 */
 		// require head_top
+		require_once('includes/head_top.php');
 		
 		?>
 		<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
@@ -12,7 +13,7 @@
 		
 		<?php
 			// require head_bottom
-			
+			require_once('includes/head_bottom.php');
 		?>
 		
 		<div id="container">
