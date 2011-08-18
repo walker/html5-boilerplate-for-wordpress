@@ -4,39 +4,39 @@
  * @subpackage HTML5_Boilerplate
  */
 
+if(!function_exists('h5bp_setup')) {
+	function h5bp_setup(){
+		if(function_exists( 'register_nav_menu')) {
+			add_theme_support('menus');
+			register_nav_menu('primary', 'Primary Navigation');
+			register_nav_menu('footer', 'Footer Navigation');
+		}
+		
+		// Widgetized Sidebar HTML5 Markup
+		if ( function_exists('register_sidebar') ) {
+			register_sidebar(array(
+				'before_widget' => '<section>',
+				'after_widget' => '</section>',
+				'before_title' => '<h2 class="widgettitle">',
+				'after_title' => '</h2>',
+			));
+		}
+		
+		$locale = get_locale();
+		$locale_file = TEMPLATEPATH . "/languages/$locale.php";
+		if (is_readable( $locale_file ) )
+			require_once( $locale_file );
+		
+		add_theme_support( 'post-thumbnails' );
+		add_theme_support( 'automatic-feed-links' );
+		add_custom_background();
+		load_theme_textdomain( 'h5bp', TEMPLATEPATH . '/languages' );
+		add_theme_support( 'post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'audio', 'chat', 'video'));
+	}
+}
+
 add_action( 'after_setup_theme', 'h5bp_setup' );
 
-
-if(!function_exists('h5bp_setup')) {
-  function h5bp_setup(){
-    if(function_exists( 'register_nav_menu')) {
-      add_theme_support('menus');
-      register_nav_menu('primary', 'Primary Navigation');
-      register_nav_menu('footer', 'Footer Navigation');
-    }
-
-    // Widgetized Sidebar HTML5 Markup
-    if ( function_exists('register_sidebar') ) {
-      register_sidebar(array(
-        'before_widget' => '<section>',
-        'after_widget' => '</section>',
-        'before_title' => '<h2 class="widgettitle">',
-        'after_title' => '</h2>',
-      ));
-    }
-
-    $locale = get_locale();
-    $locale_file = TEMPLATEPATH . "/languages/$locale.php";
-    if ( is_readable( $locale_file ) )
-      require_once( $locale_file );
-
-    add_theme_support( 'post-thumbnails' );
-    add_theme_support( 'automatic-feed-links' );
-    add_custom_background();
-    load_theme_textdomain( 'h5bp', TEMPLATEPATH . '/languages' );
-    add_theme_support( 'post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'audio', 'chat', 'video'));
-  }
-}
 
 // Custom HTML5 Comment Markup
 if (!function_exists('mytheme_comment')) {
