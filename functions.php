@@ -68,15 +68,16 @@ if (!function_exists('mytheme_comment')) {
 
 // Add ?v=[last modified time] to a file url
 if(!function_exists('versioned_resource')) {
-	function versioned_resource($relative_url){
-		$file = $_SERVER["DOCUMENT_ROOT"].$relative_url;
+	function versioned_resource($relative_url) {
+		$file = dirname(__FILE__).$relative_url;
+		error_log($file);
 		$file_version = "";
 
 		if(file_exists($file)) {
 			$file_version = "?v=".filemtime($file);
 		}
 
-		return $relative_url.$file_version;
+		return get_bloginfo('template_url').$relative_url.$file_version;
 	}
 }
 

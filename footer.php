@@ -17,8 +17,8 @@
 		</div> <!--! end of #container -->
 		
 		<!-- Javascript that is non-plugin related at the bottom for fast page loading -->
-		<script defer src="<?php bloginfo('template_url') ?>/js/plugins.js"></script>
-		<script defer src="<?php bloginfo('template_url') ?>/js/script.js"></script>
+		<script defer src="<?php echo versioned_resource('/js/plugins.js'); ?>"></script>
+		<script defer src="<?php echo versioned_resource('/js/script.js'); ?>"></script>
 		<!-- end scripts-->
 		
 		<?php wp_footer(); ?>
