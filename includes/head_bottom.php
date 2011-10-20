@@ -13,9 +13,6 @@
 		for optimal performance, create your own custom Modernizr build: www.modernizr.com/download/ -->
 	<script src="<?php bloginfo('template_url'); ?>/js/libs/modernizr-2.0.6.min.js"></script>
 	
-	<!-- (Almost) All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
-	<script src="<?php bloginfo('template_url'); ?>/js/libs/modernizr-2.0.6.min.js"></script>
-	
 	<!-- Grab Google CDN's jQuery. fall back to local if necessary -->
 	<!-- we're doing it here, rather than footer, so that plugins have it available as they almost all bind to wp_head() -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
