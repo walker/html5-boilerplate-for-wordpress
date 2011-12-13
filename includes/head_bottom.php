@@ -15,7 +15,7 @@
 	
 	<!-- Grab Google CDN's jQuery. fall back to local if necessary -->
 	<!-- we're doing it here, rather than footer, so that plugins have it available as they almost all bind to wp_head() -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script>window.jQuery || document.write("<script src='<?php bloginfo('template_url'); ?>/js/libs/jquery-1.7.1.min.js'>\x3C/script>")</script>
 	
 	<!-- Wordpress Head Items -->
