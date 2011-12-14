@@ -44,7 +44,7 @@ audio:not([controls]) { display: none; }
 
 html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
-body { margin: 0; font-size: 13px; line-height: 1.231; }
+body { margin: 0; font-size: 1em; line-height: 1.4; }
 
 body, button, input, select, textarea { font-family: sans-serif; color: #222; }
 
@@ -212,6 +212,7 @@ input:invalid, textarea:invalid { background-color: #f0dddd; }
 table { border-collapse: collapse; border-spacing: 0; }
 td { vertical-align: top; }
 
+
 /* =============================================================================
    Wordress-required Styles
    ========================================================================== */
@@ -224,9 +225,12 @@ td { vertical-align: top; }
 .sticky { background: #f7f7f7; padding: 0 10px 10px; }
 .sticky h2 { padding-top: 10px; }
 
+
 /* ==|== primary styles =====================================================
-   Author: 
+   Author:
    ========================================================================== */
+
+
 
 
 

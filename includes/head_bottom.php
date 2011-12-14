@@ -5,7 +5,6 @@
 	<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/favicon.ico">
 	<link rel="apple-touch-icon" href="<?php bloginfo('template_url'); ?>/apple-touch-icon.png">
 	
-	<!-- CSS : implied media="all" -->
 	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
 	
 	<!-- All JavaScript at the bottom, except this Modernizr build incl. Respond.js
@@ -14,7 +13,8 @@
 	<script src="<?php bloginfo('template_url'); ?>/js/libs/modernizr-2.0.6.min.js"></script>
 	
 	<!-- Grab Google CDN's jQuery. fall back to local if necessary -->
-	<!-- we're doing it here, rather than footer, so that plugins have it available as they almost all bind to wp_head() -->
+	<!-- We're doing it here, rather than footer, so that plugins have it available as they almost all bind to wp_head() -->
+	<!-- They SHOULD start binding to wp_footer()!! -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script>window.jQuery || document.write("<script src='<?php bloginfo('template_url'); ?>/js/libs/jquery-1.7.1.min.js'>\x3C/script>")</script>
 	
