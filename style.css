@@ -10,7 +10,7 @@ License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 /*
- * HTML5 ✰ Boilerplate
+ * HTML5 Boilerplate
  *
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
@@ -38,15 +38,14 @@ audio:not([controls]) { display: none; }
 
 /*
  * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
- * 2. Force vertical scrollbar in non-IE
- * 3. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+ * 2. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
  */
 
-html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+html, button, input, select, textarea { font-family: sans-serif; color: #222; }
 
 body { margin: 0; font-size: 1em; line-height: 1.4; }
-
-body, button, input, select, textarea { font-family: sans-serif; color: #222; }
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -155,7 +154,7 @@ label { cursor: pointer; }
  * 2. Correct alignment displayed oddly in IE6/7
  */
 
-legend { border: 0; *margin-left: -7px; padding: 0; }
+legend { border: 0; *margin-left: -7px; padding: 0; white-space: normal; }
 
 /*
  * 1. Correct font-size not inheriting in all browsers
@@ -183,9 +182,9 @@ button, input[type="button"], input[type="reset"], input[type="submit"] { cursor
  * Consistent box sizing and appearance
  */
 
-input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *width: 13px; *height: 13px; }
 input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
-input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }
 
 /*
  * Remove inner padding and border in FF3/4: h5bp.com/l
@@ -212,6 +211,12 @@ input:invalid, textarea:invalid { background-color: #f0dddd; }
 table { border-collapse: collapse; border-spacing: 0; }
 td { vertical-align: top; }
 
+
+/* =============================================================================
+   Chrome Frame Prompt 
+   ========================================================================== */
+
+.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
 
 /* =============================================================================
    Wordpress-required Styles
@@ -246,19 +251,13 @@ td { vertical-align: top; }
 
 
 /* ==|== media queries ======================================================
-   PLACEHOLDER Media Queries for Responsive Design.
-   These override the primary ('mobile first') styles
+   EXAMPLE Media Query for Responsive Design.
+   This example overrides the primary ('mobile first') styles
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 480px) {
-  /* Style adjustments for viewports 480px and over go here */
-
-}
-
-@media only screen and (min-width: 768px) {
-  /* Style adjustments for viewports 768px and over go here */
-
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
 }
 
 
