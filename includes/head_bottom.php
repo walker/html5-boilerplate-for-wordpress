@@ -15,8 +15,8 @@
 	<!-- Grab Google CDN's jQuery. fall back to local if necessary -->
 	<!-- We're doing it here, rather than footer, so that plugins have it available as they almost all bind to wp_head() -->
 	<!-- They SHOULD start binding to wp_footer()!! -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script>window.jQuery || document.write("<script src='<?php bloginfo('template_url'); ?>/js/libs/jquery-1.7.1.min.js'>\x3C/script>")</script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write("<script src='<?php bloginfo('template_url'); ?>/js/libs/jquery-1.7.2.min.js'>\x3C/script>")</script>
 	
 	<!-- Wordpress Head Items -->
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
