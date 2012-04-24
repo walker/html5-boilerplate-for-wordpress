@@ -20,9 +20,12 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
  *
  * ==|== normalize ==========================================================
  */
- /* =============================================================================
+
+
+/* =============================================================================
    HTML5 display definitions
    ========================================================================== */
+
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
 audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 audio:not([controls]) { display: none; }
@@ -46,12 +49,12 @@ body { margin: 0; font-size: 1em; line-height: 1.4; }
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection declarations have to be separate
- * Also: hot pink! (or customize the background color to match your design)
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
  */
 
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::-moz-selection { background: #b3d4fc; text-shadow: none; }
+::selection { background: #b3d4fc; text-shadow: none; }
 
 
 /* =============================================================================
@@ -221,17 +224,6 @@ td { vertical-align: top; }
 
 .chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
 
-/* =============================================================================
-   Wordpress-required Styles
-   ========================================================================== */
-.aligncenter { display: block; margin-left: auto; margin-right: auto; }
-.alignleft { float: left; }
-.alignright { float: right; }
-.wp-caption { border: 1px solid #ddd; text-align: center; background-color: #f3f3f3; padding-top: 4px; margin: 10px; -moz-border-radius: 3px; -khtml-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
-.wp-caption img { margin: 0; padding: 0; border: 0 none; }
-.wp-caption-dd { font-size: 11px; line-height: 17px; padding: 0 4px 5px; margin: 0; }
-.sticky { background: #f7f7f7; padding: 0 10px 10px; }
-.sticky h2 { padding-top: 10px; }
 
 /* ==|== primary styles =====================================================
    Author:
@@ -242,15 +234,17 @@ td { vertical-align: top; }
 
 
 
-
-
-
-
-
-
-
-
-
+/* =============================================================================
+  Wordpress-required Styles
+  ========================================================================== */
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.alignleft { float: left; }
+.alignright { float: right; }
+.wp-caption { border: 1px solid #ddd; text-align: center; background-color: #f3f3f3; padding-top: 4px; margin: 10px; -moz-border-radius: 3px; -khtml-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+.wp-caption img { margin: 0; padding: 0; border: 0 none; }
+.wp-caption-dd { font-size: 11px; line-height: 17px; padding: 0 4px 5px; margin: 0; }
+.sticky { background: #f7f7f7; padding: 0 10px 10px; }
+.sticky h2 { padding-top: 10px; }
 
 /* ==|== media queries ======================================================
    EXAMPLE Media Query for Responsive Design.
@@ -269,7 +263,7 @@ td { vertical-align: top; }
    ========================================================================== */
 
 /* For image replacement */
-.ir { border:0; font: 0/0 a; text-shadow: none; color: transparent; background-color: transparent; }
+.ir { border: 0; font: 0/0 a; text-shadow: none; color: transparent; background-color: transparent; }
 
 /* Hide from both screenreaders and browsers: h5bp.com/u */
 .hidden { display: none !important; visibility: hidden; }
@@ -296,11 +290,11 @@ td { vertical-align: top; }
    ========================================================================== */
 
 @media print {
-  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; } /* Black prints faster: h5bp.com/s */
   a, a:visited { text-decoration: underline; }
   a[href]:after { content: " (" attr(href) ")"; }
   abbr[title]:after { content: " (" attr(title) ")"; }
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; } /* Don't show links for images, or javascript/internal links */
   pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
   thead { display: table-header-group; } /* h5bp.com/t */
   tr, img { page-break-inside: avoid; }

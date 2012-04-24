@@ -10,13 +10,13 @@
 	<!-- All JavaScript at the bottom, except this Modernizr build incl. Respond.js
 		Respond is a polyfill for min/max-width media queries. Modernizr enables HTML5 elements & feature detects; 
 		for optimal performance, create your own custom Modernizr build: www.modernizr.com/download/ -->
-	<script src="<?php bloginfo('template_url'); ?>/js/libs/modernizr-2.5.3.min.js"></script>
+	<script src="<?php bloginfo('template_url'); ?>/js/vendor/modernizr-2.5.3.min.js"></script>
 	
 	<!-- Grab Google CDN's jQuery. fall back to local if necessary -->
 	<!-- We're doing it here, rather than footer, so that plugins have it available as they almost all bind to wp_head() -->
 	<!-- They SHOULD start binding to wp_footer()!! -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<script>window.jQuery || document.write("<script src='<?php bloginfo('template_url'); ?>/js/libs/jquery-1.7.2.min.js'>\x3C/script>")</script>
+	<script>window.jQuery || document.write("<script src='<?php bloginfo('template_url'); ?>/js/vendor/jquery-1.7.2.min.js'>\x3C/script>")</script>
 	
 	<!-- Wordpress Head Items -->
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
@@ -24,3 +24,6 @@
 	
 </head>
 <body <?php body_class(); ?>>
+	<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+		chromium.org/developers/how-tos/chrome-frame-getting-started -->
+	<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
