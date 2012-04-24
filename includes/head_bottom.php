@@ -5,7 +5,7 @@
 	<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/favicon.ico">
 	<link rel="apple-touch-icon" href="<?php bloginfo('template_url'); ?>/apple-touch-icon.png">
 	
-	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
+	<link rel="stylesheet" href="<?php echo versioned_resource('/style.css'); ?>">
 	
 	<!-- All JavaScript at the bottom, except this Modernizr build incl. Respond.js
 		Respond is a polyfill for min/max-width media queries. Modernizr enables HTML5 elements & feature detects; 

@@ -70,7 +70,6 @@ if (!function_exists('mytheme_comment')) {
 if(!function_exists('versioned_resource')) {
 	function versioned_resource($relative_url) {
 		$file = dirname(__FILE__).$relative_url;
-		error_log($file);
 		$file_version = "";
 
 		if(file_exists($file)) {
