@@ -272,6 +272,17 @@ AddType application/x-shockwave-flash       swf
 
 </IfModule>
 
+# ----------------------------------------------------------------------
+# Prevent mobile network providers from modifying your site
+# ----------------------------------------------------------------------
+
+# The following header prevents modification of your code over 3G on some European providers
+# This is the official 'bypass' suggested by O2 in the UK
+
+# <IfModule mod_headers.c>
+# Header set Cache-Control "no-transform"
+# </IfModule>
+
 
 
 # ----------------------------------------------------------------------
@@ -302,6 +313,20 @@ FileETag None
 # BrowserMatch "Mozilla/4.[0-9]{2}" brokenvary=1
 # BrowserMatch "Opera" !brokenvary
 # SetEnvIf brokenvary 1 force-no-vary
+
+
+
+# ----------------------------------------------------------------------
+# Set Keep-Alive Header
+# ----------------------------------------------------------------------
+
+# Keep-Alive allows the server to send multiple requests through one TCP-connection.
+# Be aware of possible disadvantages of this setting. Turn on if you serve a lot of
+# static content.
+
+# <IfModule mod_headers.c>
+#   Header set Connection Keep-Alive
+# </IfModule>
 
 
 
@@ -422,6 +447,18 @@ FileETag None
 Options -MultiViews
 
 
+
+# ----------------------------------------------------------------------
+# Custom 404 page
+# ----------------------------------------------------------------------
+
+# You can add custom pages to handle 500 or 403 pretty easily, if you like.
+# If you are hosting your site in subdirectory, adjust this accordingly
+#    e.g. ErrorDocument 404 /subdir/404.html
+ErrorDocument 404 /404.html
+
+
+
 # ----------------------------------------------------------------------
 # UTF-8 encoding
 # ----------------------------------------------------------------------
@@ -453,10 +490,10 @@ AddCharset utf-8 .css .js .xml .json .rss .atom
 </IfModule>
 
 
-# Block access to "hidden" directories whose names begin with a period. This
+# Block access to "hidden" directories or files whose names begin with a period. This
 # includes directories used by version control systems such as Subversion or Git.
 <IfModule mod_rewrite.c>
-  RewriteCond %{SCRIPT_FILENAME} -d
+  RewriteCond %{SCRIPT_FILENAME} -d [OR]
   RewriteCond %{SCRIPT_FILENAME} -f
   RewriteRule "(^|/)\." - [F]
 </IfModule>
