@@ -15,21 +15,15 @@
 				</p>
 			</footer>
 		</div> <!--! end of #container -->
-		
-		<!-- Javascript that is non-plugin related at the bottom for fast page loading -->
 		<script defer src="<?php echo versioned_resource('/js/plugins.js'); ?>"></script>
 		<script defer src="<?php echo versioned_resource('/js/main.js'); ?>"></script>
-		<!-- end scripts-->
-		
 		<?php wp_footer(); ?>
-		
-		<!-- Change UA-XXXXX-X to be your site's ID -->
-		<!-- If you're not using the Wordpress GA plugin, but use GA, use this embed code.
-		<script>
-			var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-			g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-			s.parentNode.insertBefore(g,s)}(document,'script'));
-		</script>-->
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID and uncomment. -->
+        <!-- <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script> -->
 	</body>
 </html>
