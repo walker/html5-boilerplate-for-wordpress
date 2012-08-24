@@ -65,7 +65,7 @@
 							</ul>
 						</li>
 					<?php } ?>
-			<?php endif; ?>
-		</ul>
-	</nav>
+				</ul>
+			</nav>
+	<?php endif; ?>
 </aside>
