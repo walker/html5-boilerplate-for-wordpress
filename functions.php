@@ -11,7 +11,7 @@ if(!function_exists('h5bp_setup')) {
 			register_nav_menu('primary', 'Primary Navigation');
 			register_nav_menu('footer', 'Footer Navigation');
 		}
-		
+
 		// Widgetized Sidebar HTML5 Markup
 		if ( function_exists('register_sidebar') ) {
 			register_sidebar(array(
@@ -21,12 +21,12 @@ if(!function_exists('h5bp_setup')) {
 				'after_title' => '</h2>',
 			));
 		}
-		
+
 		$locale = get_locale();
 		$locale_file = TEMPLATEPATH . "/languages/$locale.php";
 		if (is_readable( $locale_file ) )
 			require_once( $locale_file );
-		
+
 		add_theme_support( 'post-thumbnails' );
 		add_theme_support( 'automatic-feed-links' );
 		add_custom_background();
