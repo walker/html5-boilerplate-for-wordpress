@@ -31,7 +31,7 @@ if(!function_exists('h5bp_setup')) {
         remove_action( 'wp_head', 'wp_generator' );
 
         /* Some other items in the document head that you can remove: */
-        // remove_action( 'wp_head', 'feed_links', );
+        // remove_action( 'wp_head', 'feed_links' );
         // remove_action( 'wp_head', 'feed_links_extra' );
         // remove_action( 'wp_head', 'rsd_link' );
         // remove_action( 'wp_head', 'wlwmanifest_link' );
