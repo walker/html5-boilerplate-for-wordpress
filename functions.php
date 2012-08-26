@@ -45,10 +45,12 @@ if(!function_exists('h5bp_setup')) {
 
         if(!is_admin()) {
             wp_deregister_script('jquery');
-            wp_enqueue_script('modernizr', '//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.1/modernizr.min.js');
-            wp_register_script('jquery', '//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery-1.8.0.min.js');
+            wp_enqueue_script('modernizr', versioned_resource('js/vendor/modernizr-2.6.1.min.js'));
+            wp_register_script('jquery', versioned_resource('//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js'));
             wp_enqueue_script('jquery');
         }
+
+        wp_enqueue_style('style', versioned_resource('style.css'));
     }
 }
 
