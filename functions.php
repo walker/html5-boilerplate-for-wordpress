@@ -43,13 +43,12 @@ if(!function_exists('h5bp_setup')) {
 		load_theme_textdomain( 'h5bp', TEMPLATEPATH . '/languages' );
 		add_theme_support( 'post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'audio', 'chat', 'video'));
 
-		wp_deregister_script('jquery');
-		wp_enqueue_script('modernizr', 'http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.1/modernizr.min.js');
-		wp_register_script('jquery', 'http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery-1.8.0.min.js');
-		wp_enqueue_script('jquery');
-
-		wp_enqueue_style('bootstrap-responsive', versioned_resource('/css/bootstrap-responsive.min.css'));
-		wp_enqueue_style('style', versioned_resource('/style.css'));
+		if(!is_admin()) {
+			wp_deregister_script('jquery');
+			wp_enqueue_script('modernizr', '//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.1/modernizr.min.js');
+			wp_register_script('jquery', '//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery-1.8.0.min.js');
+			wp_enqueue_script('jquery');
+		}
 	}
 }
 
