@@ -52,9 +52,8 @@ if(!function_exists('h5bp_init')) {
             wp_enqueue_script('modernizr', versioned_resource('js/vendor/modernizr-2.6.1.min.js'));
             wp_register_script('jquery', versioned_resource('//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js'));
             wp_enqueue_script('jquery');
+            wp_enqueue_style('style', versioned_resource('style.css'));
         }
-
-        wp_enqueue_style('style', versioned_resource('style.css'));
     }
 }
 add_action( 'after_setup_theme', 'h5bp_setup' );
