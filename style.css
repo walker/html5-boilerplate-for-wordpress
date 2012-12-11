@@ -9,17 +9,11 @@ Tags: white
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
-/*! normalize.css v1.0.1 | MIT License | git.io/normalize */
+/*! normalize.css v1.0.2 | MIT License | git.io/normalize */
 
 /* ==========================================================================
    Find "Authors Custom Styles" below and put your CSS there.
    ========================================================================== */
-
-
-
-
-
-
 
 /* ==========================================================================
   HTML5 display definitions
@@ -170,7 +164,7 @@ h5 {
 }
 
 h6 {
-   font-size: 0.75em;
+   font-size: 0.67em;
    margin: 2.33em 0;
 }
 
@@ -523,18 +517,6 @@ table {
    border-collapse: collapse;
    border-spacing: 0;
 }
-
-/* =============================================================================
- Wordpress-required Styles
- ========================================================================== */
-.aligncenter { display: block; margin-left: auto; margin-right: auto; }
-.alignleft { float: left; }
-.alignright { float: right; }
-.wp-caption { border: 1px solid #ddd; text-align: center; background-color: #f3f3f3; padding-top: 4px; margin: 10px; -moz-border-radius: 3px; -khtml-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
-.wp-caption img { margin: 0; padding: 0; border: 0 none; }
-.wp-caption-dd { font-size: 11px; line-height: 17px; padding: 0 4px 5px; margin: 0; }
-.sticky { background: #f7f7f7; padding: 0 10px 10px; }
-.sticky h2 { padding-top: 10px; }
 
 /*
  * HTML5 Boilerplate

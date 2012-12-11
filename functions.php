@@ -51,7 +51,7 @@ if(!function_exists('h5bp_init')) {
         if(!is_admin()) {
             wp_deregister_script('jquery');
             wp_enqueue_script('modernizr', versioned_resource('js/vendor/modernizr-2.6.2.min.js'));
-            wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js');
+            wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js');
             wp_enqueue_script('jquery');
             wp_enqueue_style('style', versioned_resource('style.css'));
         }
