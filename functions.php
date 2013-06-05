@@ -51,7 +51,7 @@ if(!function_exists('h5bp_init')) {
         if(!is_admin()) {
             wp_deregister_script('jquery'); // deregister jQuery
             // register it again, this time with no file path
-            wp_register_script('jquery', '', FALSE, '1.10.1');
+            wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js', FALSE, '1.10.1');
             // re-register jQuery with no file path
             wp_enqueue_script('jquery');
         }
