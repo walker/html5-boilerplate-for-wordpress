@@ -9,7 +9,10 @@
         <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
         <?php wp_head(); ?>
         <script>typeof Modernizr == 'object' || document.write("<script src='<?php bloginfo('template_url'); ?>/js/vendor/modernizr-2.6.2.min.js'>\x3C/script>")</script>
-        <script>window.jQuery || document.write("<script src='<?php bloginfo('template_url'); ?>/js/vendor/jquery-1.9.1.min.js'>\x3C/script>")</script>
+        <!-- Switch to 2.0.2 Start
+            <script>window.jQuery || document.write("<script src='<?php bloginfo('template_url'); ?>/js/vendor/jquery-2.0.2.min.js'>\x3C/script>")</script>
+        Switch to 2.0.3 End -->
+        <script>window.jQuery || document.write("<script src='<?php bloginfo('template_url'); ?>/js/vendor/jquery-1.10.1.min.js'>\x3C/script>")</script>
     </head>
     <body <?php body_class(); ?>>
         <!--[if lt IE 7]>

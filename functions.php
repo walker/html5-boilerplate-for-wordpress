@@ -49,11 +49,11 @@ if(!function_exists('h5bp_init')) {
         remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 ); // Links for Adjacent Posts
 
         if(!is_admin()) {
-            wp_deregister_script('jquery');
-            wp_enqueue_script('modernizr', versioned_resource('js/vendor/modernizr-2.6.2.min.js'));
-            wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js');
+            wp_deregister_script('jquery'); // deregister jQuery
+            // register it again, this time with no file path
+            wp_register_script('jquery', '', FALSE, '1.10.1');
+            // re-register jQuery with no file path
             wp_enqueue_script('jquery');
-            wp_enqueue_style('style', versioned_resource('style.css'));
         }
     }
 }
